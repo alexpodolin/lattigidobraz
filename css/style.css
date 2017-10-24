@@ -138,7 +138,7 @@ html, body {
 }
 .main__courses [class^='main__courses_'] span {
 	position: relative;
-	margin: -25% 0% 5% 50%;
+	margin: -27% 0% 6% 50%;
 	display: flex;
 }
 .main__courses [class^='main__courses_'] img {
@@ -219,7 +219,7 @@ html, body {
     width: 50%;
     margin: 3% auto;
     padding: 2% 0;
-    border: 1px solid #91A0A8;
+    border: 0px solid #91A0A8;
 	box-shadow: inset 0px 0px 10px rgba(210,221,224,0.5), inset 0px 0px 10px rgba(210,221,224,0.5);
 }
 .main__enroll span {
@@ -255,18 +255,18 @@ html, body {
 	width: 2%;
 	background-color: #ffffff;
 }
-
-
 .sidebar {
 	width: 29%;
 	background-color: #91A0A8;
-	display: flex;
-	flex-direction: column;
+}
+.sidebar__top {
+	background-color: #ffffff;
 }
 .sidebar__logo_container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	background-color: #91A0A8;
 }
 .sidebar__logo {
 	content: '';
@@ -283,23 +283,17 @@ html, body {
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
-    text-decoration: none;
-    /*letter-spacing: 1px; */   
+    text-decoration: none; 
     padding: 2% 0% 2% 17%;
 }
-
-
 .sidebar__contacts {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
 	background-color: #ffffff;
 }
 .sidebar__contacts_line {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;		
-	align-items: center;
+	align-items: stretch;
+	margin: 0% 0 1% 0;
 }
 .sidebar__contacts_declare {
 	font-size: 14px;
@@ -309,12 +303,14 @@ html, body {
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
     color: #758187;
-   /* margin: 4% 0 0 0;*/
+    width: 30%;
+    padding: 4% 0 0 0;
 }
 .sidebar__contacts-links {
 	display: flex;
 	flex-direction: column;
-/*	margin: 1% 10% 1% 0;*/
+	margin: 1% 4% 2% 4%;
+	width: 46%;
 }
 .sidebar__contacts_link {
 	color: #758187;
@@ -323,33 +319,122 @@ html, body {
 .sidebar__contacts_link:hover {
 	text-decoration: underline;
 }
-
 .sidebar__contacts_icon-phone {
 	background: url(../image/phone.png) transparent no-repeat;
-	background-size: contain;
-	width:30px;
-	height: 30px;
-	/*margin: 1% 0 0 0;*/
-	
+	background-size: cover;
+	width:35px;
+	height: 35px;
+	margin: 2% 3% 0 0%;
 }
 .sidebar__contacts_icon-at {
 	background: url(../image/at.png) transparent no-repeat;
-	background-size: contain;
-	width:30px;
-	height: 30px;
-	/*margin: 1% 0 0 0;*/
+	background-size: cover;
+	width:35px;
+	height: 35px;
+	margin: 2% 3% 0 0%;
 }
 .sidebar__contacts_icon-smile {
 	background: url(../image/smile.png) transparent no-repeat;
-	background-size: contain;
-	width:30px;
-	height: 30px;
-	/*margin: 1% 0 0 0;*/
+	background-size: cover;
+	width:35px;
+	height: 35px;
+	margin: 2% 3% 0 0%;
 }
-
-
-
-
+.sidebar__contacts-links address {	
+    font-style: normal;
+    font-family: 'Cuprum', sans-serif;
+    color: #758187;
+}
+.aside__menu {
+	width: 100%;
+	background-color: #ffffff;
+}
+.aside__menu ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+.aside__menu_item {
+	list-style-type: none;
+	background-color: #91A0A8;	    
+    width: 100%;
+    margin: 1% auto;
+    border-bottom: 4px solid #758187;
+}
+.aside__menu_item:hover {
+	background-color: #758187;
+	cursor: pointer;
+}
+.aside__menu_link {
+	font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+	text-decoration: none;
+	padding: 3% 0 2% 7%;
+    display: inline-flex;
+}
+.main__aside_enroll {
+	position: relative;
+	background-color: #ffffff;	
+    width: 100%;
+    margin: 4% auto;
+    padding: 6% 0;
+    border: 0px solid #91A0A8;
+	box-shadow: inset 0px 0px 10px rgba(210,221,224,0.5), inset 0px 0px 10px rgba(210,221,224,0.5);
+}
+.main__aside_enroll span {
+	font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 1px;
+    display: inline-flex;
+    margin: 0 0 0 -20%;
+}
+.main__aside_enroll span:after {
+	content:'';
+	position: absolute;
+	background: url(../image/poster.png) transparent no-repeat;
+	background-size: contain;
+    width: 35px;
+    height: 35px;
+    top: 20%;
+    right: 6%;
+}
+.main__aside_enroll:hover {
+	cursor: pointer;
+	box-shadow: inset 0px 0px 20px 3px #91A0A8;
+	opacity: 0.8;
+}
+.main__aside_enroll:active {
+	box-shadow: inset 0px 0px 20px 3px #535353;
+}
+.aside__social {
+	display: flex;
+	flex-direction: column;
+	margin: 5% 0 0 0;
+}
+.aside__social span {
+	font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+.aside__social a {
+	width: 35px;
+	height: 35px;	
+    margin: 0 auto;
+    padding: 2% 0;
+}
 .footer {
 	width: 100%;
 	display: flex;
@@ -377,3 +462,31 @@ html, body {
     margin: 1% 0;
     text-align: center;
 }
+
+
+/*------ Скрытая форма ------*/
+.enroll {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	width: 49.8%;
+	background-color: #F4FBFC;
+	opacity: 0.85;
+	top: 10%;
+}
+.enroll__invitation  {
+	width: 50%;
+}
+.enroll__invitation span  {
+	display: flex;
+    margin: 20% 30%;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: 'Open sans', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+/*--- Скрытая форма конец ---*/
