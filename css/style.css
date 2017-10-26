@@ -40,6 +40,18 @@ html, body {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
+
+/*------ Слайдер ------*/
+.slider {
+	width: 662px;
+	height: 319px;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+/*------ Слайдер конец ------*/
 .content__nav {
 	width: 100%;	
 	margin: 2% 0 0 0;	
@@ -466,10 +478,10 @@ html, body {
 
 /*------ Скрытая форма ------*/
 .enroll {
-	display: flex;
+	display: none;
+	/*display: flex;*/
 	align-items: stretch;
 	position: fixed;
-	/*width: 49.8%;*/
 	width: 35.8%;
 	background-color: #F4FBFC;
 	opacity: 0.85;
