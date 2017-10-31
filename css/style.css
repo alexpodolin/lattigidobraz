@@ -52,19 +52,18 @@ html, body {
 
 }
 /*div[class^='slider__slide slide-'] {*/	
-.slider__slide {
+.slider__slide { 
 	width: 100%;
 	height: 100%;
-
 	animation: fadeIn 10s infinite;
-	}
-	@keyframes fadeIn { 
-		0% { opacity:0 } 
-		50% { opacity:1 } 
-		100% { opacity:0 }
-		50% { opacity:1 } 
-	}
 }
+@keyframes fadeIn { 
+	0% { opacity:0 } 
+	50% { opacity:1 } 
+	100% { opacity:0 }
+	50% { opacity:1 } 
+}
+
 
 /*.slide-001 {
 	background: url(../image/slide_001.jpg) transparent no-repeat;
@@ -108,12 +107,17 @@ html, body {
 .content__nav_menu-li {
 	list-style-type: none;
 	border-bottom: 4px solid #91A0A8;
-	padding: 8px 11px;
+	padding: 8px 5px;
 	position: relative;
 }
 .content__nav_menu-li:hover {
 	box-shadow: inset 0px 0px 3px 0px #91A0A8;
 	background-color: #F4FBFC;
+}
+.content__nav_menu-li:active {
+	background-color: #FFFFFF;
+    border-width: 4px 0px 0px;
+    border-top: solid #91A0A8;
 }
 .content__nav_menu-link {
 	font-size: 12px;
@@ -123,6 +127,7 @@ html, body {
 	text-transform: uppercase;
 	color: #5D5D68;
 	text-decoration: none;
+	padding: 0 5px;
 }
 .content__nav_menu-link_marker:after {
 	content: "\25bc";    
@@ -133,7 +138,6 @@ html, body {
 .content__menu-show:hover > .content__nav_menu-nested {
 	position: absolute;
 	display: flex;	
-	display: -webkit-flex;
 	flex-direction: column;
 	width: 95.28px;
     margin: 12px 0 0 -11px;
@@ -198,8 +202,18 @@ html, body {
 .main__courses [class^='main__courses_'] img {
     margin: 4% 0% 2% 10%;
     display: inline-flex;
-    width:76px;
-    height: 68px;
+    width:75px;
+    height: 70px;
+}
+.main__courses [class^='main__courses_']:nth-child(5) img {
+    width: 105px;
+    height: 90px;
+    margin: 0% 0% 0% 3%;
+}
+.main__courses [class^='main__courses_']:nth-child(6) img {
+    width: 105px;
+    height: 90px;
+    margin: 0% 0% 0% 3%;
 }
 .main__courses [class^='main__courses_']:hover {
 	box-shadow: inset 0px 0px 30px  5px #91A0A8;
@@ -512,7 +526,7 @@ html, body {
     font-weight: normal;
     font-family: 'Cuprum', sans-serif;
     color: #758187;
-    margin: 2% 0 1% 0;
+    margin: 2% 0 2% 0;
 }
 .footer [class^='footer__']:nth-child(2) {
 	width: 20%;	
