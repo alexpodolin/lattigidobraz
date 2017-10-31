@@ -49,9 +49,10 @@ html, body {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	border: none;
+
 }
-div[class^='slider__slide slide-'] {	
+/*div[class^='slider__slide slide-'] {*/	
+.slider__slide {
 	width: 100%;
 	height: 100%;
 
@@ -65,7 +66,7 @@ div[class^='slider__slide slide-'] {
 	}
 }
 
-.slide-001 {
+/*.slide-001 {
 	background: url(../image/slide_001.jpg) transparent no-repeat;
 }
 .slide-002 {
@@ -91,7 +92,7 @@ div[class^='slider__slide slide-'] {
 }
 .slide-009 {
 	background: url(../image/slide_009.jpg) transparent no-repeat;
-}
+}*/
 /*------ Слайдер конец ------*/
 .content__nav {
 	width: 100%;	
@@ -195,15 +196,18 @@ div[class^='slider__slide slide-'] {
 	display: flex;
 }
 .main__courses [class^='main__courses_'] img {
-	/*position: absolute;*/
-    margin: 5% 0% 2% 10%;
+    margin: 4% 0% 2% 10%;
     display: inline-flex;
-    width: 80px;
-    height: 70px;
+    width:76px;
+    height: 68px;
 }
 .main__courses [class^='main__courses_']:hover {
 	box-shadow: inset 0px 0px 30px  5px #91A0A8;
 	opacity: 0.8;
+}
+.main__courses [class^='main__courses_']:active {
+	border-style: solid;
+    border-width: 4px 0px 0px;
 }
 
 .main__text {
@@ -330,14 +334,15 @@ div[class^='slider__slide slide-'] {
 	margin: 5% 0 0 33%;
 }
 .sidebar__logo_link {
-	font-size: 12px;
-    line-height: 16px;
+	font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 3px;
     font-weight: normal;
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none; 
-    padding: 2% 0% 2% 17%;
+    padding: 1% 0% 2% 8%;
 }
 .sidebar__contacts {
 	width: 100%;
@@ -346,23 +351,28 @@ div[class^='slider__slide slide-'] {
 .sidebar__contacts_line {
 	display: flex;
 	align-items: stretch;
-	margin: 0% 0 1% 0;
+	margin: 1% 0 0% 0;
+}
+.sidebar__contacts_line:nth-child(2) {
+	margin: -1% 0 0% 0;
 }
 .sidebar__contacts_declare {
-	font-size: 14px;
-    line-height: 18px;
+	font-size: 12px;
+    line-height: 14px;
     font-weight: normal;
     font-style: italic;
     font-family: 'Cuprum', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #758187;
     width: 30%;
-    padding: 4% 0 0 0;
+    padding: 5% 0 0 0;
 }
 .sidebar__contacts-links {
 	display: flex;
 	flex-direction: column;
-	margin: 1% 4% 2% 4%;
+	margin: 3% 4% 1% 2%;
 	width: 46%;
 }
 .sidebar__contacts_link {
@@ -375,26 +385,27 @@ div[class^='slider__slide slide-'] {
 .sidebar__contacts_icon-phone {
 	background: url(../image/phone.png) transparent no-repeat;
 	background-size: cover;
-	width:35px;
-	height: 35px;
+	width:30px;
+	height: 30px;
 	margin: 2% 3% 0 0%;
 }
 .sidebar__contacts_icon-at {
 	background: url(../image/at.png) transparent no-repeat;
 	background-size: cover;
-	width:35px;
-	height: 35px;
+	width:30px;
+	height: 30px;
 	margin: 2% 3% 0 0%;
 }
 .sidebar__contacts_icon-smile {
 	background: url(../image/smile.png) transparent no-repeat;
 	background-size: cover;
-	width:35px;
-	height: 35px;
+	width:30px;
+	height: 30px;
 	margin: 2% 3% 0 0%;
 }
 .sidebar__contacts-links address {	
-    font-style: normal;
+    font-style: normal;    
+    line-height: 14px;
     font-family: 'Cuprum', sans-serif;
     color: #758187;
 }
@@ -496,12 +507,21 @@ div[class^='slider__slide slide-'] {
 }
 .footer [class^='footer__'] {
 	width: 25%;
-	font-size: 12px;
-    line-height: 16px;
+	font-size: 10px;
+    line-height: 14px;
     font-weight: normal;
     font-family: 'Cuprum', sans-serif;
     color: #758187;
-    margin: 1% 0;
+    margin: 2% 0 1% 0;
+}
+.footer [class^='footer__']:nth-child(2) {
+	width: 20%;	
+}
+.footer [class^='footer__']:nth-child(3) {
+	width: 35%;	
+}
+.footer [class^='footer__']:nth-child(4) {
+	width: 20%;	
 }
 .footer__logo img {	
 	width: 105px;
@@ -509,11 +529,15 @@ div[class^='slider__slide slide-'] {
 	margin: 1% 0 0 25%;
 }
 .footer__logo p {
-	font-size: 14px;
+	font-size: 10px;
     line-height: 18px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 1% 0;
     text-align: center;
+}
+.footer__address address {
+	font-style: normal;
 }
 
 
