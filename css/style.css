@@ -272,6 +272,9 @@ html, body {
 .main_text_link:hover {
     color: #0000FF; 
 }
+.main_text_link:active {
+    color: #EE0000; 
+}
 .main__list {
 	color: #758187;
 }
@@ -390,7 +393,7 @@ html, body {
 }
 .sidebar__logo {
 	content: '';
-	background: url(../image/latti_logo_aside.png) transparent no-repeat;
+	background: url('../image/latti_logo_aside.png') transparent no-repeat;
 	background-size: contain;
 	width:95px;
 	height: 30px;
@@ -685,20 +688,20 @@ html, body {
 	height: 20px;
 }
 .form__enroll ::-webkit-input-placeholder { /* Chrome */
-  color: #000000;
-  padding: 0 0 0 1%;
+	color: #000000;
+	padding: 0 0 0 1%;
 }
 .form__enroll_btn {    
-  border: 1px solid #000000;
-  background-color: #ffffff;
-  font-size: 16px;
-  line-height: 18px;
-  font-style: normal;
-  font-family: 'Cuprum', sans-serif;
-  color: #000000;
-  text-transform: uppercase;
-  padding: 3% 10%;
-  margin: 3% 0 1% 0;
+	border: 1px solid #000000;
+	background-color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-style: normal;
+	font-family: 'Cuprum', sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	padding: 3% 10%;
+	margin: 3% 0 1% 0;
 }
 .form__enroll_btn:hover {
     border-color: #6B6B6B;
@@ -732,3 +735,109 @@ html, body {
 	background-color: #6B6B6B;
 }
 /*--- Скрытая форма конец ---*/
+
+
+/*------ about.html ------*/
+.main__about_header {
+	display: flex;
+	width: 100%;
+	margin: 0 0 3% 0;
+}
+.main__about_container {
+	width: 50%;
+	display: flex;
+    flex-direction: column;
+}
+.main__about_logo {
+	content: '';
+	background: url('../image/latti_logo_main.png') transparent no-repeat;
+	background-size: contain;
+	width: 60%;
+	height: 50px;
+}
+.main__about_logo-name {
+	font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+    color: #758187;
+}
+.main__about_proverb {
+	font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Cuprum', sans-serif;
+    text-align: right;
+    color: #758187;
+}
+.main__about_auth {
+	font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Cuprum', sans-serif;
+    text-align: right;
+    color: #758187;
+    margin: 0;
+}
+.main__about_text-ul {
+	margin: 0;
+	padding: 0;
+}
+.main_about_text-li {
+	list-style-type: none;
+	font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #758187;
+}
+/*------ about.html конец-*/
+
+/*------ what.html -------*/
+.main__text_subheader {
+	font-style: italic;
+	font-weight: bold;
+}
+.main__what-ul {	
+	margin: 0;
+	padding: 0;
+	color: #758187;
+}
+.main__what-li {
+/*	list-style-type: '●';*/
+	list-style-type: none;
+	line-height: 24px;
+}
+.main__what-li:before {
+	content: "●";
+	color: #D2DDE0;
+    margin: 0px 1% 0px 0%;
+}
+/*------ what.html конец -*/
+
+/*------ price.html -------*/
+.main__price-ul {
+	margin: 0;
+	padding: 0;
+	color: #758187;
+}
+.main__price-li {
+	list-style-type: none;
+	line-height: 24px;
+}
+.main__price-li:before {
+	content: "●";
+	color: #D2DDE0;
+    margin: 0px 1% 0px 0%;
+}
+/*.main__text-price {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    color: #758187;
+}*/
+/*------ price.html конец--*/
