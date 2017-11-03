@@ -155,7 +155,11 @@ html, body {
 	text-transform: uppercase;
 	color: #5D5D68;
 	text-decoration: none;
-	padding: 0 5px;
+	padding: 0 2px;
+}
+.content__nav_menu-link:after {
+	content: "\203A";
+	padding: 0 0 0 4px; 
 }
 .content__nav_menu-link_marker:after {
 	content: "\25bc";    
@@ -192,7 +196,7 @@ html, body {
 .main {
 	display: flex;
 	flex-direction: column;
-	margin: 5% 2% 5% 11%;
+	margin: 5% 5% 5% 11%;
 }
 .main__header {
 	margin: 0;
@@ -491,6 +495,11 @@ html, body {
 	padding: 3% 0 2% 7%;
     display: inline-flex;
 }
+.aside__menu_link:after {
+	content: "\203A";
+	padding: 0 0 0 4px; 
+}
+
 .main__aside_enroll {
 	position: relative;
 	background-color: #ffffff;	
