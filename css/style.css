@@ -362,6 +362,15 @@ html, body {
 .main__enroll:active {
 	box-shadow: inset 0px 0px 20px 3px #535353;
 }
+.main__enroll_arrow {
+	content: "\203A";
+	position: relative;
+
+    width: 35px;
+    height: 35px;
+    top: 13%;
+    right: 6%;
+}
 .content__padding {
 	width: 2%;
 	background-color: #ffffff;
