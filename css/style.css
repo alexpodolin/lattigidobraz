@@ -841,3 +841,131 @@ html, body {
     color: #758187;
 }*/
 /*------ price.html конец--*/
+
+/*---- speaker.html -------*/
+.main__biogr {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	margin: 0 0 5% 0;
+}
+.main__biogr_about {
+	padding: 0 0 0 5%;
+}
+.main__biogr_about h2 {
+	text-align: left;
+	text-transform: capitalize;
+	font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    font-weight: normal;
+    color: #5D5D68;
+    margin: 0 auto;
+}
+/*---- speaker.html конец--*/
+
+/*------ doc.html ---------*/
+.main__docs {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	margin: 0 0 5% 0;
+}
+.main__docs_about {
+	padding: 0 0 0 5%;
+}
+.main__text_doc {
+	margin: 0;
+}
+.main__text_italic {
+	font-style: italic;
+	padding: 0 0 5% 0px;
+}
+.main__text_strong {
+	display: flex;
+	font-weight: bold;
+}
+.main__text_pdf {
+	display: flex;
+	font-weight: lighter;
+}
+.main__text_pdf-img { 
+	margin: 0; 
+}
+.main__docs_pdf {
+	display: block;
+    margin: 0 0 0 -3%;
+}
+/*------ doc.html конец----*/
+
+/*----- contact.html ------*/
+.main__contact {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.main__contact_links {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+.main__contact_links-block {
+	display: flex;
+	flex-direction: row;
+	margin: 8% 0 0 0 ;
+}
+.main__contact_icon-phone {
+	background: url(../image/phone.png) transparent no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin: 16% 7% 0 0;
+}
+.main__contact_phone-num {
+	display: flex;
+	flex-direction: column;
+}
+.main__contact_icon-email {
+	background: url(../image/at.png) transparent no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;    
+    margin: 0 7% 0 0;
+}
+.main__contact_email {
+	display: flex;
+	flex-direction: column;
+	margin: 1% 0 0 0;
+}
+.main__contact_phone-link, 
+.main__contact_email-link {
+	font-weight: bold;
+	color: #758187;
+    text-decoration: none;
+}
+.main__contact_phone-link:hover, 
+.main__contact_email-link:hover {	
+    text-decoration: underline;
+}
+.main__contact_about {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+}
+.main__contact_about-header {
+	font-weight: bold;
+	color: #5D5D68;
+}
+.main__contact-text {
+	margin: 0;
+}
+.main__contact_map {
+	display: flex;
+	width: 100%;
+    height: 100%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
+}
+/*--- contact.html конец --*/
