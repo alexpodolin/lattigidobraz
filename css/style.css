@@ -2018,7 +2018,7 @@ html, body {
 	width: 170px;
 	height: 75px;
 }
-.main_excurs_header {
+.main_logo_header {
 	display: flex;
 	font-size: 18px;
     line-height: 24px;
@@ -2041,6 +2041,113 @@ html, body {
 }
 /*--- excurs.html конец ---*/
 
+
+
+
+
 /*--- меню в блоке main ---*/
 
 /* меню в блоке main конец */
+
+
+
+
+
+
+
+/*---- turproduct.html ----*/
+.main__turproduct {
+	display: flex;
+	width: 100%;
+	margin: 0 0 -3% 0;
+}
+.main__turproduct_logo {
+	display: flex;
+	background: url(../image/poster_002.png) no-repeat transparent;
+	background-size: contain;
+	width: 95px;
+	height: 75px;
+}
+.main__turproduct_text {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: #758187;;
+}
+/*- turproduct.html конец -*/
+
+/*----- manager.html ------*/
+.main__manager {
+	display: flex;
+	width: 100%;
+	margin: 0 0 -1% 0;
+}
+.main__manager_logo {
+	display: flex;
+	background: url(../image/poster_003.png) no-repeat transparent;
+	background-size: contain;
+	width: 150px;
+	height: 75px;
+}
+.main__manager_text {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: #758187;;
+}
+/*-- manager.html конец ---*/
+
+/*------ cruise.html ------*/
+.main__cruise {
+	display: flex;
+	width: 100%;
+	margin: 0 0 -1% 0;
+}
+.main__cruise_logo {
+	display: flex;
+	background: url(../image/poster_004.png) no-repeat transparent;
+	background-size: contain;
+	width: 150px;
+	height: 75px;
+}
+/*--- cruise.html конец ---*/
+
+/*------ young.html -------*/
+.main__young {
+	display: flex;
+	width: 100%;
+	margin: 0 0 0 0;
+}
+.main__young_text_wrapper {
+	width: 100%;
+	display: flex;
+}
+.main__young_text  {
+	display: flex;
+	padding: 0 25%;
+	font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: 'Cuprum', sans-serif;
+    color: #758187;;
+    text-align: center;
+}
+/*--- young.html конец ----*/
