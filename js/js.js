@@ -1,6 +1,6 @@
 /*выпадающее меню первый вариант*/
 
-/*var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3',
+var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3',
 						'sub_menu_4','sub_menu_5','sub_menu_6',
 						'sub_menu_7','sub_menu_8','sub_menu_9',
 						'sub_menu_10','sub_menu_11');
@@ -17,22 +17,22 @@ function openMenu(id){
 			document.getElementById(id_menu[i]).style.display = "none";
 		}
 	}
-	if (document.getElementById(id).style.display == "block") {
+	if (document.getElementById(id).style.display == "flex") {
 		document.getElementById(id).style.display = "none";
 	} else {
-		document.getElementById(id).style.display = "block";
+		document.getElementById(id).style.display = "flex";
 	}
 }
-window.onload=startList;*/
+window.onload=startList;
 
 // http://jemand.ru/vertikalnoe-vypadayushhee-menyu-cssjs-onclick/
 
-$(document).ready(function() {
-	$.easing.def = "easeInOutQuad";
-	$('li.button a').click(function(e) {
-		var dropDown = $(this).parent().next();
-		$('.dropdown').not(dropDown).slideUp('slow');
-		dropDown.slideToggle('slow');
-		e.preventDefault();
-	}) 
-});
+// $(document).ready(function() {
+// 	$.easing.def = "easeInOutQuad";
+// 	$('li.button a').click(function(e) {
+// 		var dropDown = $(this).parent().next();
+// 		$('.dropdown').not(dropDown).slideUp('slow');
+// 		dropDown.slideToggle('slow');
+// 		e.preventDefault();
+// 	}) 
+// });

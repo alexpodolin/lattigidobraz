@@ -2043,10 +2043,83 @@ html, body {
 
 
 
-
-
 /*--- меню в блоке main ---*/
+/*.course__menu {
+    display: flex;
+    width: 122.7%;
+    position: relative;
+    margin: 0 0 0 -13.3%;
+}*/
+.course__menu_ul {
+	/*display: flex;
+	flex-direction: column;*/
+	padding: 0;
+	width: 122.7%;
+    position: relative;
+    margin: 0 0 0 -13.3%;
+}
+.course__menu_item {
+	list-style: none;
+    background-color: #D2DDE0;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: #D2DDE0;*/
+    border-top: 1px solid #D2DDE0;
+    border-bottom: 1px solid #D2DDE0;
+    border-left: none;
+    border-right: none;
+    box-shadow: inset 0px 0px 5px rgba(117,129,135,0.3), 
+    			inset 0px 0px 5px rgba(117,129,135,0.3);
+    padding: 2% 0 2% 11%;
 
+    color: #5D5D68;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.course__menu_item span {
+	display: flex;
+}
+.course__dropdawn-menu {
+	display: flex;
+	flex-direction: column;	
+	margin: 0;
+    padding: 3% 0 3% 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+	font-family: 'Open sans', sans-serif;
+	color: #5D5D68;
+}
+.course__dropdawn-menu_item {
+	list-style-type: none;
+	padding: 0.5% 0 1% 0;
+}
+.course__dropdawn-menu_item:before {
+	content: "●";
+	color: #5D5D68;
+    margin: 0 1% 0 -2.5%;
+}
+
+/*.course__dropdawn-menu_item-primary {
+	padding: 5% 0 5% 0;
+}*/
+.course__dropdawn-menu_mark {
+	list-style-type: none;
+	padding: 0.5% 0 1% 0;	
+}
+.course__dropdawn-menu_mark:before {
+	content: '✓';
+	color: #5D5D68;
+    margin: 0 1% 0 -2.5%;
+}
+.course__dropdawn-menu_item-route {
+	margin: 1% 0 1% -1.5%;
+}
+.course__dropdawn-menu_item-route:before {
+	content: ' ';
+}
 /* меню в блоке main конец */
 
 
