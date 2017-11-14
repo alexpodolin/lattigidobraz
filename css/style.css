@@ -2078,7 +2078,7 @@ html, body {
 	height: 100%;
 	max-height: 100%;
 	padding: 3% 0 3% 3%;
-	as
+
 	transition: all 0.9s ease-in-out;
 }
 .course__dropdawn-menu_item {
@@ -2088,7 +2088,7 @@ html, body {
 .course__dropdawn-menu_item:before {
 	content: "●";
 	color: #5D5D68;
-    margin: 0 1% 0 0.5%;
+    margin: 0 1% 0 -2.5%;
 }
 
 /*.course__dropdawn-menu_item-primary {
@@ -2101,7 +2101,7 @@ html, body {
 .course__dropdawn-menu_mark:before {
 	content: '✓';
 	color: #5D5D68;
-    margin: 0 1% 0 0.5%;
+    margin: 0 1% 0 -3%;
 }
 .course__dropdawn-menu_item-route {
 	margin: 1% 0 1% -1.5%;
@@ -2245,7 +2245,7 @@ html, body {
 }
 .main__young_text  {
 	display: flex;
-	padding: 0 25%;
+	padding: 0 26%;
 	font-size: 18px;
     line-height: 24px;
     font-weight: normal;
