@@ -42,3 +42,35 @@ function openMenu(el) {
 function makeActive(el) {
 	el.classList.add('сourse__menu_item-open');
 }
+
+
+
+
+// Показать форму записи на курсы
+function showEnrollForm() {
+	var enroll = document.getElementsByClassName('enroll');
+	for (i = 0; i < enroll.length; i++ ) {
+		enroll[i].style.display = 'flex';
+	}
+	//document.body.style.backgroundColor = '#535353';
+}
+
+// Скрыть форму записи на курсы
+function closeEnrollForm() {
+	setTimeout(closeForm(), 700);
+}
+
+function closeForm() {
+	var enroll = document.getElementsByClassName('enroll');
+	for (i = 0; i < enroll.length; i++ ) {
+		//enroll[i].classList.add('enroll__hide');
+		enroll[i].style.display = 'none';
+		//document.body.style.backgroundColor = 'transparent';		
+	}
+
+}
+
+
+
+
+

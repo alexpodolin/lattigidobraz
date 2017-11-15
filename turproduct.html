@@ -280,7 +280,7 @@
 				</ul>
 			</nav>
 
-			<button class="main__enroll"><span>Записаться на курсы 	&rsaquo;</span></button>
+			<button class="main__enroll" onclick="showEnrollForm();"><span>Записаться на курсы 	&rsaquo;</span></button>
 		</main>
 	</div>
 
@@ -351,7 +351,7 @@
 				</ul>			
 			</nav>
 
-			<button class="main__aside_enroll"><span>Записаться на курсы &rsaquo;</span></button>
+			<button class="main__aside_enroll" onclick="showEnrollForm();"><span>Записаться на курсы &rsaquo;</span></button>
 		</div>
 
 		<div class="aside__social">
@@ -360,7 +360,7 @@
 		</div>
 	</aside>
 
-	<div class="enroll">		
+	<div class="enroll" id="enroll__form">		
 
 		<div class="enroll__invitation">
 			<span>УВАЖАЕМЫЙ НАШ СЛУШАТЕЛЬ, ДЛЯ БОЛЕЕ КОНСТРУКТИВНОГО ОБЩЕНИЯ СООБЩИТЕ, ПОЖАЛУЙСТА:</span>
@@ -414,7 +414,7 @@
 			</fieldset>
 		</form>
 
-		<button class="enroll__close-up" type="button" onclick=""></button>
+		<button class="enroll__close-up" type="button" onclick="closeEnrollForm();"></button>
 	</div>
 
 	<footer class="footer">
