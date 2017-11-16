@@ -1,6 +1,6 @@
-// скроем - покажем меню
+// скроем - покажем меню 
+// на страницах бокового меню
 function openMenu(el) {	
-
 	// получим список всех элементов с классом course__dropdawn-menu-open
 	// и удалим этот классу всех кроме текущего
 	var elem = document.getElementsByClassName('course__dropdawn-menu-open');
@@ -11,13 +11,11 @@ function openMenu(el) {
 	// извлекаю значение аттрибута data-menu-id
 	var attr = el.getAttribute("sub-menu-id");
 
-
 	// по этому значению ищу индентификатор
 	var idCurrent = document.getElementById(attr);
 
 	// добавим класс где идентификатор
 	idCurrent.classList.add('course__dropdawn-menu-open');	
-
 
 	// замен background-color при нажатии, 
 	// с помощью добавления класса
@@ -36,7 +34,6 @@ function openMenu(el) {
 	for (var i = 0; i < elems.length; i++) {
 	    elems[i].addEventListener('click', makeActive);
 	}
-
 }
 
 function makeActive(el) {
@@ -50,27 +47,41 @@ function makeActive(el) {
 function showEnrollForm() {
 	var enroll = document.getElementsByClassName('enroll');
 	for (i = 0; i < enroll.length; i++ ) {
+		// уберем класс анимации исчезновения окна
+		enroll[i].classList.remove('enroll__hide');
 		enroll[i].style.display = 'flex';
 	}
-	//document.body.style.backgroundColor = '#535353';
+	// добавим класс с фоном для body и wrapper
+	document.getElementsByTagName('body')[0].classList.add('body-form-bg-fadeIn');	
+	var wrap = document.getElementsByClassName('wrapper');
+	for (var i = 0; i < wrap.length; i++) {
+		wrap[i].classList.add('wrapper-form-bg-fadeIn')
+	}
 }
 
 // Скрыть форму записи на курсы
 function closeEnrollForm() {
-	setTimeout(closeForm(), 700);
-}
-
-function closeForm() {
+	// добавим класс анимации с исчезновением окна
 	var enroll = document.getElementsByClassName('enroll');
 	for (i = 0; i < enroll.length; i++ ) {
-		//enroll[i].classList.add('enroll__hide');
+		enroll[i].classList.remove('enroll__hide');		
 		enroll[i].style.display = 'none';
-		//document.body.style.backgroundColor = 'transparent';		
 	}
+	//таймаут перед тем как скрыть форму
+	setTimeout(function() {
+		var enroll = document.getElementsByClassName('enroll');
+		for (i = 0; i < enroll.length; i++ ) {
+			enroll[i].style.display = 'none';
+		}
+	}, 700);
 
+	// уберем класс с фоном для body и wrapper
+	document.getElementsByTagName('body')[0].classList.remove('body-form-bg-fadeIn');
+	var wrap = document.getElementsByClassName('wrapper');
+	for (var i = 0; i < wrap.length; i++) {
+		wrap[i].classList.remove('wrapper-form-bg-fadeIn')
+	}
 }
-
-
 
 
 
