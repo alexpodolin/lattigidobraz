@@ -16,6 +16,10 @@ function openMenu(el) {
 
 	// добавим класс где идентификатор
 	idCurrent.classList.add('course__dropdawn-menu-open');	
+	// высота появляющегося блока с отступами, границами и т.д
+	var dropdownMenuHeight = idCurrent.scrollHeight;	
+	console.log(dropdownMenuHeight);
+	//idCurrent.style.height = dropdownMenuHeight + "px";
 
 	// замен background-color при нажатии, 
 	// с помощью добавления класса
@@ -28,7 +32,7 @@ function openMenu(el) {
 	        elems[i].classList.remove('сourse__menu_item-open');
 	    }
     
-    	this.classList.add('сourse__menu_item-open');
+    	this.classList.add('сourse__menu_item-open');    	
 	};
 
 	for (var i = 0; i < elems.length; i++) {
