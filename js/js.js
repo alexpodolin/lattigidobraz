@@ -1,5 +1,5 @@
-// скроем - покажем меню 
-// на страницах бокового меню
+// =================================================================================
+// скроем - покажем раскрывающееся меню 
 function openMenu(el) {	
 	// получим список всех элементов с классом course__dropdawn-menu-open
 	// и удалим этот классу всех кроме текущего
@@ -16,10 +16,11 @@ function openMenu(el) {
 
 	// добавим класс где идентификатор
 	idCurrent.classList.add('course__dropdawn-menu-open');	
-	// высота появляющегося блока с отступами, границами и т.д
+	// вычислим высоту появляющегося блока с отступами, границами и т.д
 	var dropdownMenuHeight = idCurrent.scrollHeight;	
 	console.log(dropdownMenuHeight);
-	//idCurrent.style.height = dropdownMenuHeight + "px";
+	// установим высоту в px
+	idCurrent.style.height = dropdownMenuHeight + 'px';
 
 	// замен background-color при нажатии, 
 	// с помощью добавления класса
@@ -30,6 +31,8 @@ function openMenu(el) {
 	makeActive = function () {
 	    for (var i = 0; i < elems.length; i++) {
 	        elems[i].classList.remove('сourse__menu_item-open');
+	        // выставим высоту при скрытии окна
+	        idCurrent.style.height = '0px';
 	    }
     
     	this.classList.add('сourse__menu_item-open');    	
@@ -43,10 +46,10 @@ function openMenu(el) {
 function makeActive(el) {
 	el.classList.add('сourse__menu_item-open');
 }
+// =================================================================================
 
 
-
-
+// =================================================================================
 // Показать форму записи на курсы
 function showEnrollForm() {
 	var enroll = document.getElementsByClassName('enroll');
@@ -86,6 +89,7 @@ function closeEnrollForm() {
 		wrap[i].classList.remove('wrapper-form-bg-fadeIn')
 	}
 }
+// =================================================================================
 
 
 
