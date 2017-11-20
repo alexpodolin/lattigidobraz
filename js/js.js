@@ -5,7 +5,7 @@ function openMenu(el) {
 	// и удалим этот классу всех кроме текущего
 	var elem = document.getElementsByClassName('course__dropdawn-menu-open');
 		for ( i = 0; i < elem.length; i++) {
-			elem[i].classList.toggle('course__dropdawn-menu-open');					
+			elem[i].classList.toggle('course__dropdawn-menu-open');		
 		}
 
 	// извлекаю значение аттрибута data-menu-id
@@ -32,7 +32,7 @@ function openMenu(el) {
 	        elems[i].classList.remove('сourse__menu_item-open');
 	        // выставим высоту при скрытии окна
 	        // idCurrent.style.height = '0';
-	        idCurrent.style.height = '';
+	        idCurrent.style.removeProperty('height');
 
 	    }
     
