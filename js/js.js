@@ -18,7 +18,6 @@ function openMenu(el) {
 	idCurrent.classList.add('course__dropdawn-menu-open');	
 	// вычислим высоту появляющегося блока с отступами, границами и т.д
 	var dropdownMenuHeight = idCurrent.scrollHeight;	
-	console.log(dropdownMenuHeight);
 	// установим высоту в px
 	idCurrent.style.height = dropdownMenuHeight + 'px';
 
@@ -32,7 +31,9 @@ function openMenu(el) {
 	    for (var i = 0; i < elems.length; i++) {
 	        elems[i].classList.remove('сourse__menu_item-open');
 	        // выставим высоту при скрытии окна
-	        idCurrent.style.height = '0px';
+	        // idCurrent.style.height = '0';
+	        idCurrent.style.height = '';
+
 	    }
     
     	this.classList.add('сourse__menu_item-open');    	
