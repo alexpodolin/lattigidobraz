@@ -1,8 +1,8 @@
 html, body {
 	margin: 0 auto;
 	font-family: 'Open Sans', 'Cuprum', sans-serif;
-	font-size: 13px;
-	line-height: 17px;
+	font-size: 14px;
+	line-height: 18px;
 	word-break: break-word;
 	text-rendering: auto;
 	color: #000000;
@@ -26,14 +26,12 @@ html, body {
 /* анимация фона при появлении скрытой формы */
 .body-form-bg-fadeIn,
 .wrapper-form-bg-fadeIn {
-	/*background-color: #535353;*/
-	    background-color: rgba(64,64,64,0.9);
-	opacity: 0.85;
+	background-color: #535353;
+	opacity: 0.8;
 	position: relative;
 	z-index: 100;
 	animation: bg-fadeIn linear 0.7s; 
 }
-
 @-moz-keyframes bg-fadeIn {
     from { opacity: 0; }
 	to { opacity: 0.85; }
@@ -51,8 +49,8 @@ html, body {
 	background-color: #ffffff;
 }
 .content h2 {
-	font-size: 23px;
-	line-height: 31px;
+	font-size: 24px;
+	line-height: 32px;
 	font-weight: lighter;
 	color: #91A0A8;
 	text-align: center;
@@ -94,7 +92,7 @@ html, body {
 .content__nav_menu-li {
 	list-style-type: none;
 	border-bottom: 4px solid #91A0A8;
-	/*padding: 8px 5px;*/
+	padding: 8px 5px;
 	position: relative;
 }
 .content__nav_menu-li:hover {
@@ -118,7 +116,7 @@ html, body {
 	border-left: none;
 	border-right: none;
 	border-bottom: 4px solid #91A0A8;
-	/*cursor: default;*/
+	cursor: default;
 }
 .content__nav_menu-current:active {
 	background-color: #D2DDE0;
@@ -132,16 +130,14 @@ html, body {
 	cursor: default;
 }
 .content__nav_menu-link {
-	font-size: 11px;
-	line-height: 13px;
+	font-size: 12px;
+	line-height: 14px;
 	font-weight: bold;
 	font-family: 'Cuprum', sans-serif;
 	text-transform: uppercase;
 	color: #5D5D68;
 	text-decoration: none;
-	/*padding: 0 2px;*/
-	padding: 10px 10px 5px 10px;
-	display: flex;
+	padding: 0 2px;
 }
 .content__nav_menu-link:after {
 	content: "\203A";
@@ -157,8 +153,8 @@ html, body {
 	position: absolute;
 	display: flex;	
 	flex-direction: column;
-	width: 91px;
-    margin: 5px 0 0 0px;
+	width: 93px;
+    margin: 12px 0 0 -5px;
     padding: 0;
 }
 .content__nav_menu-nested-li {	
@@ -171,8 +167,8 @@ html, body {
 	background-color: #AAAAAA;
 }
 .content__nav_menu-nested-link {
-	font-size: 11px;
-	line-height: 13px;
+	font-size: 12px;
+	line-height: 14px;
 	font-weight: bold;
 	font-family: 'Cuprum', sans-serif;
 	text-transform: uppercase;
@@ -184,10 +180,10 @@ html, body {
 	flex-direction: column;
 	margin: 5% 5% 5% 11%;
 }
-.main__header, h1 {
+.main__header {
 	margin: 0;
-	font-size: 17px;
-	line-height: 23px;
+	font-size: 18px;
+	line-height: 24px;
 	font-weight: bold;
 	color: #5D5D68;
 }
@@ -246,8 +242,8 @@ html, body {
 }
 
 .main__text {
-	font-size: 13px;
-	line-height: 23px;
+	font-size: 14px;
+	line-height: 24px;
 	font-weight: normal;
 	color: #758187;
 }
@@ -274,8 +270,8 @@ html, body {
 	margin: 0 1% 0 -2.5%;
 }
 .main_advertising {
-	font-size: 13px;
-	line-height: 23px;
+	font-size: 14px;
+	line-height: 24px;
 	font-weight: bold;
 	color: #758187;
 	text-align: center;
@@ -323,8 +319,8 @@ html, body {
 	box-shadow: inset 0px 0px 10px rgba(210,221,224,0.5), inset 0px 0px 10px rgba(210,221,224,0.5);
 }
 .main__enroll span {
-	font-size: 17px;
-    line-height: 23px;
+	font-size: 18px;
+    line-height: 24px;
     font-weight: normal;
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
@@ -385,8 +381,8 @@ html, body {
 	margin: 5% 0 0 33%;
 }
 .sidebar__logo_link {
-	font-size: 9px;
-    line-height: 13px;
+	font-size: 10px;
+    line-height: 14px;
     letter-spacing: 3px;
     font-weight: normal;
     font-family: 'Cuprum', sans-serif;
@@ -482,8 +478,8 @@ html, body {
 	cursor: pointer;
 }
 .aside__menu_link {
-	font-size: 11px;
-    line-height: 17px;
+	font-size: 14px;
+    line-height: 18px;
     font-weight: bold;
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
@@ -506,8 +502,8 @@ html, body {
 	box-shadow: inset 0px 0px 10px rgba(210,221,224,0.5), inset 0px 0px 10px rgba(210,221,224,0.5);
 }
 .main__aside_enroll span {
-	font-size: 17px;
-    line-height: 23px;
+	font-size: 18px;
+    line-height: 24px;
     font-weight: normal;
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
@@ -540,8 +536,8 @@ html, body {
 	margin: 5% 0 0 0;
 }
 .aside__social span {
-	font-size: 13px;
-    line-height: 17px;
+	font-size: 14px;
+    line-height: 18px;
     font-weight: bold;
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
@@ -562,8 +558,8 @@ html, body {
 }
 .footer [class^='footer__'] {
 	width: 25%;
-	font-size: 9px;
-    line-height: 13px;
+	font-size: 10px;
+    line-height: 14px;
     font-weight: normal;
     font-family: 'Cuprum', sans-serif;
     color: #758187;
@@ -613,8 +609,8 @@ html, body {
 	height: 50px;
 }
 .main__about_logo-name {
-	font-size: 7px;
-    line-height: 9px;
+	font-size: 8px;
+    line-height: 10px;
     letter-spacing: 1px;
     font-weight: bold;
     font-family: 'Cuprum', sans-serif;
@@ -622,8 +618,8 @@ html, body {
     color: #758187;
 }
 .main__about_proverb {
-	font-size: 13px;
-    line-height: 17px;
+	font-size: 14px;
+    line-height: 18px;
     letter-spacing: 1px;
     font-weight: bold;
     font-style: italic;
@@ -632,8 +628,8 @@ html, body {
     color: #758187;
 }
 .main__about_auth {
-	font-size: 13px;
-    line-height: 17px;
+	font-size: 14px;
+    line-height: 18px;
     font-weight: normal;
     font-style: italic;
     font-family: 'Cuprum', sans-serif;
@@ -647,8 +643,8 @@ html, body {
 }
 .main_about_text-li {
 	list-style-type: none;
-	font-size: 13px;
-    line-height: 23px;
+	font-size: 14px;
+    line-height: 24px;
     font-weight: normal;
     color: #758187;
 }
@@ -712,8 +708,8 @@ html, body {
 .main__biogr_about h2 {
 	text-align: left;
 	text-transform: capitalize;
-	font-size: 17px;
-    line-height: 23px;
+	font-size: 18px;
+    line-height: 24px;
     letter-spacing: 0;
     font-weight: normal;
     color: #5D5D68;
@@ -861,15 +857,19 @@ html, body {
 .course__menu_item {
 	list-style: none;
     background-color: #D2DDE0;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: #D2DDE0;*/
+    /*border-top: 1px solid #D2DDE0;
+    border-bottom: 1px solid #D2DDE0;*/
     border-left: none;
     border-right: none;
     box-shadow: inset 0px 0px 5px rgba(117,129,135,0.3), 
     			inset 0px 0px 5px rgba(117,129,135,0.3);
     padding: 2% 0 2% 11%;
     color: #5D5D68;
-    font-size: 17px;
-    line-height: 23px;
-	font-weight:600;
+    font-size: 18px;
+    line-height: 24px;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
@@ -889,8 +889,8 @@ html, body {
 	display: flex;
 	flex-direction: column;	
 	margin: 0;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
     font-weight: normal;
 	font-family: 'Open sans', sans-serif;
 	color: #5D5D68;	
@@ -900,7 +900,7 @@ html, body {
 	height: 100%;
 	/*max-height: 100%;*/
 	padding: 3% 0 3% 3%;
-	transition: height .6s linear;
+	transition: height .9s linear;
 }
 .course__dropdawn-menu_item {
 	list-style-type: none;
@@ -943,8 +943,8 @@ html, body {
 }
 .main_logo_header {
 	display: flex;
-	font-size: 17px;
-    line-height: 23px;
+	font-size: 18px;
+    line-height: 24px;
     letter-spacing: 1px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -953,8 +953,8 @@ html, body {
 .main_course_header {
 	display: flex;	
 	justify-content: center;
-	font-size: 17px !important;
-	line-height: 23px !important;
+	font-size: 18px !important;
+	line-height: 24px !important;
 	letter-spacing: 1px !important;
 	font-weight: bold !important;
 	font-family: 'Cuprum', sans-serif;
@@ -1014,8 +1014,8 @@ html, body {
 	margin: 0;
 	padding: 0;
 
-	font-size: 13px;
-    line-height: 187px;
+	font-size: 14px;
+    line-height: 18px;
     letter-spacing: 1px;
     font-weight: bold;
     font-style: italic;
@@ -1066,15 +1066,14 @@ html, body {
 /*------ Скрытая форма ------*/
 .enroll {	
 	display: none;
+	align-items: stretch;
 	position: fixed;
 	width: 35.8%;
 	background-color: #F4FBFC;
 	/*opacity: 0.85;*/
 	opacity: 1;
-	top: 19%;
-	animation: fadeIn linear 0.85s; 
-	z-index: 999;
-	margin: 0 32%;
+	top: 10%;
+	animation: fadeIn linear 0.7s; 
 }
 @-moz-keyframes fadeIn {
     from { opacity: 0; }
@@ -1111,8 +1110,8 @@ html, body {
 }
 .enroll__invitation span  {	
     padding: 85% 15%;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
     font-weight: bold;
     font-family: 'Open sans', sans-serif;
     text-transform: uppercase;
@@ -1141,8 +1140,8 @@ html, body {
 }
 .form__enroll_item span {
 	list-style-type: none;
-	font-size: 13px;
-    line-height: 17px;
+	font-size: 14px;
+    line-height: 18px;
     font-weight: bold;
     font-family: 'Cuprum', sans-serif;
     color: #000000;
@@ -1153,8 +1152,8 @@ html, body {
 			  input[type=tel], 
 			  input[type=email], 
 			  textarea   {
-	font-size: 11px;
-    line-height: 15px;
+	font-size: 12px;
+    line-height: 16px;
     font-style: italic;
     font-family: 'Cuprum', sans-serif;
     letter-spacing: 1px;
@@ -1163,7 +1162,6 @@ html, body {
     background-color: #F2F2F2;
     border: 1px solid #C4C4C4;
     resize: none;
-    padding: 2% 0;
 }
 .form__enroll input[type=text], 
 			  input[type=tel], 
@@ -1174,30 +1172,11 @@ html, body {
 	color: #000000;
 	padding: 0 0 0 1%;
 }
-.form__enroll input[type=text]:hover, 
-			  input[type=tel]:hover, 
-			  input[type=email]:hover, 
-			  textarea:hover {
-	background-color: #ffffff;
-	border-color: #000000;
-	font-style: normal;
-}
-.form__enroll input[type=text]:focus, 
-			  input[type=tel]:focus, 
-			  input[type=email]:focus, 
-			  textarea:focus {
-	background-color: #ffffff;
-	border-color: #000000;
-	font-style: normal;
-}
-.form__enroll input[type=text]:focus + span {
-	display: none;
-}
 .form__enroll_btn {    
 	border: 1px solid #000000;
 	background-color: #ffffff;
-	font-size: 15px;
-	line-height: 17px;
+	font-size: 16px;
+	line-height: 18px;
 	font-style: normal;
 	font-family: 'Cuprum', sans-serif;
 	color: #000000;
@@ -1217,19 +1196,17 @@ html, body {
 .enroll__close-up {
 	display: flex;
 	align-self: flex-start;
-	width: 45px;
-	height: 45px;
+	width: 25px;
+	height: 25px;
 	border: none;
 	border-radius: 50%;
 	background-color: #D2DDE0;
 	position: fixed;
-    margin: -1.4% 0 0 34.5%;
+    margin: -0.7% 0 0 35%;
 }
 .enroll__close-up:after {
 	content: "\2573";    
-    left: 30%;
-    position: relative;
-    transform: scale(1,1);
+	transform: scale(0.6, 0.6);
 }
 .enroll__close-up:hover {
 	background-color: #999999;
