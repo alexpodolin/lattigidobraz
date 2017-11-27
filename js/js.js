@@ -53,24 +53,27 @@ function makeActive(el) {
 // =================================================================================
 // Показать форму записи на курсы
 function showEnrollForm() {
-	var enroll = document.getElementsByClassName('enroll');
+	/*var enroll = document.getElementsByClassName('enroll');
 	for (i = 0; i < enroll.length; i++ ) {
 		// уберем класс анимации исчезновения окна
 		enroll[i].classList.remove('enroll__hide');
 		enroll[i].style.display = 'flex';
-	}
+	}*/
 	// добавим класс с фоном для body и wrapper
-	document.getElementsByTagName('body')[0].classList.add('body-form-bg-fadeIn');	
+	/*document.getElementsByTagName('body')[0].classList.add('body-form-bg-fadeIn');	
 	var wrap = document.getElementsByClassName('wrapper');
 	for (var i = 0; i < wrap.length; i++) {
 		wrap[i].classList.add('wrapper-form-bg-fadeIn')
-	}
+	}*/
+
+	document.getElementById('enroll__wrapper').style.display = 'flex';
+
 }
 
 // Скрыть форму записи на курсы
 function closeEnrollForm() {
 	// добавим класс анимации с исчезновением окна
-	var enroll = document.getElementsByClassName('enroll');
+	/*var enroll = document.getElementsByClassName('enroll');
 	for (i = 0; i < enroll.length; i++ ) {
 		enroll[i].classList.remove('enroll__hide');		
 		enroll[i].style.display = 'none';
@@ -88,7 +91,8 @@ function closeEnrollForm() {
 	var wrap = document.getElementsByClassName('wrapper');
 	for (var i = 0; i < wrap.length; i++) {
 		wrap[i].classList.remove('wrapper-form-bg-fadeIn')
-	}
+	}*/
+	document.getElementById('enroll__wrapper').style.display = 'none';
 }
 // =================================================================================
 

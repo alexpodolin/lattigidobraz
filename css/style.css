@@ -33,16 +33,14 @@ html, body {
 }
 
 /* анимация фона при появлении скрытой формы */
-.body-form-bg-fadeIn,
+/*.body-form-bg-fadeIn,
 .wrapper-form-bg-fadeIn {
-	/*background-color: #535353;*/
-	    background-color: rgba(64,64,64,0.9);
+	background-color: rgba(64,64,64,0.9);
 	opacity: 0.85;
 	position: relative;
 	z-index: 100;
 	animation: bg-fadeIn linear 0.7s; 
 }
-
 @-moz-keyframes bg-fadeIn {
     from { opacity: 0; }
 	to { opacity: 0.85; }
@@ -54,7 +52,7 @@ html, body {
 @keyframes bg-fadeIn {
     from { opacity: 0; }
 	to { opacity: 0.85; }  
-}
+}*/
 .content {
 	width: 69%;
 	background-color: #ffffff;
@@ -1088,8 +1086,36 @@ html, body {
 
 
 /*------ Скрытая форма ------*/
-.enroll {	
+
+#enroll__wrapper {
+	/*background-color: #535353;*/
+	background-color: rgba(64,64,64,0.9);
+	/*opacity: 0.85;*/
+	opacity: 0.9;
+	position: fixed;
+	z-index: 100;
+	animation: bg-fadeIn linear 0.4s; 
+
 	display: none;
+	width: 100%;
+    height: 100%;
+    top: 0;
+}
+@-moz-keyframes bg-fadeIn {
+    from { opacity: 0; }
+	to { opacity: 0.85; }
+}
+@-webkit-keyframes bg-fadeIn {
+    from { opacity: 0; }
+	to { opacity: 0.85; }
+}
+@keyframes bg-fadeIn {
+    from { opacity: 0; }
+	to { opacity: 0.85; }  
+}
+
+.enroll {	
+	display: flex;
 	position: fixed;
 	width: 35.8%;
 	background-color: #F4FBFC;
@@ -1100,19 +1126,7 @@ html, body {
 	z-index: 999;
 	margin: 0 32%;
 }
-@-moz-keyframes fadeIn {
-    from { opacity: 0; }
-	to { opacity: 0.85; }
-}
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-	to { opacity: 0.85; }
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-	to { opacity: 0.85; }  
-}
-.enroll__hide {
+/*.enroll__hide {
 	opacity: 0;
 	animation: fadeOut linear 0.7s;
 	transition: opacity 0.7s;
@@ -1128,7 +1142,7 @@ html, body {
 @keyframes fadeOut {
     from { opacity: 0.85; }
 	to { opacity: 0; }
-}
+}*/
 .enroll__invitation  {
 	width: 36%;
 	display: flex;	
