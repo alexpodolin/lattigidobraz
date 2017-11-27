@@ -97,18 +97,18 @@ html, body {
 	/*padding: 8px 5px;*/
 	position: relative;
 }
-.content__nav_menu-li:hover {
+/*.content__nav_menu-li:hover {
 	box-shadow: inset 0px 0px 3px 0px #91A0A8;
 	background-color: #F4FBFC;
-	cursor: pointer;
-}
-.content__nav_menu-li:active {
+*/	/*cursor: pointer;*/
+/*}*/
+/*.content__nav_menu-li:active {
 	background-color: #FFFFFF;
     border-style: solid;
     border-color: #91A0A8;    
     border-width: 4px 0px 0px;
     box-shadow: inset 0px 0px 8px rgba(145,160,168,0.5), inset 0px 0px 8px rgba(145,160,168,0.5);
-}
+}*/
 .content__nav_menu-current {
 	background-color: #D2DDE0;
 }
@@ -146,6 +146,17 @@ html, body {
 .content__nav_menu-link:after {
 	content: "\203A";
 	padding: 0 0 0 4px; 
+}
+.content__nav_menu-link:hover {
+	box-shadow: inset 0px 0px 3px 0px #91A0A8;
+	background-color: #F4FBFC;
+}
+.content__nav_menu-link:active {
+	background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #91A0A8;    
+    border-width: 4px 0px 0px;
+    box-shadow: inset 0px 0px 8px rgba(145,160,168,0.5), inset 0px 0px 8px rgba(145,160,168,0.5);
 }
 .content__nav_menu-link_marker:after {
 	content: "\25bc";    
