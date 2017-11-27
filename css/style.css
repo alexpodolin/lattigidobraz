@@ -78,7 +78,7 @@ html, body {
 .slider__slide { 
 	width: 100%;
 	height: 100%;
-	animation: sliderfadeInOut 10s infinite;
+	animation: sliderfadeInOut 9s infinite;
 }
 @keyframes sliderfadeInOut { 
 	0% { opacity:0 } 
