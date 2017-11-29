@@ -1,52 +1,47 @@
 // =================================================================================
 // скроем - покажем раскрывающееся меню 
-function openMenu(el) {	
-	// получим список всех элементов с классом course__dropdawn-menu-open
-	// и удалим этот классу всех кроме текущего
-	var elem = document.getElementsByClassName('course__dropdawn-menu-open');
-		for ( i = 0; i < elem.length; i++) {
-			elem[i].classList.toggle('course__dropdawn-menu-open');		
-		}
+// дождемся загрузки страницы
+window.onload = function subMenuOpen() {
+// выберем все элементы с селектором класса .course__menu
+for (var a = document.querySelectorAll('.course__menu'), el, i = 0; i < a.length; i++)	
+	// для каждого элемента с таким селектором регистрируем
+	// обработчик события c типом click,  в качестве объекта,
+	// реализующего интерфейс EventListener просто функция JavaScript.
+    a[i].addEventListener('click', function (d) {
+	d++;	
 
-	// извлекаю значение аттрибута data-menu-id
-	var attr = el.getAttribute("sub-menu-id");
+		// вернем в качестве функции и ее аргумента номер  элемента на который кликаем
+	    return function (b) {
+	        var c = document.getElementById('sub_menu_' + d);
+	        el && (el.style.display = 'none');
+	        c != el ? (c.style.display = 'flex', el = c) : ( el = null);
+	        b = b || window.event;
+	        b.preventDefault ? b.preventDefault() : b.returnValue = !1
+	    }
+	}
 
-	// по этому значению ищу индентификатор
-	var idCurrent = document.getElementById(attr);
+	(i));  
 
-	// добавим класс где идентификатор
-	idCurrent.classList.add('course__dropdawn-menu-open');	
-	// вычислим высоту появляющегося блока с отступами, границами и т.д
-	var dropdownMenuHeight = idCurrent.scrollHeight;	
-	// установим высоту в px
-	idCurrent.style.height = dropdownMenuHeight + 'px';
-
-	// замен background-color при нажатии, 
+	// заменим background-color при нажатии, 
 	// с помощью добавления класса
 	var selector, elems, makeActive;
-	selector = '.course__menu_item';
+	selector = '.course__menu';
 	elems = document.querySelectorAll(selector);
 
 	makeActive = function () {
-	    for (var i = 0; i < elems.length; i++) {
-	        elems[i].classList.remove('сourse__menu_item-open');
-	        // выставим высоту при скрытии окна
-	        // idCurrent.style.height = '0';
-	        idCurrent.style.removeProperty('height');
+		    for (var i = 0; i < elems.length; i++) {
+		        elems[i].classList.remove('сourse__menu-open');
+		    }	    	
 
-	    }
-    
-    	this.classList.add('сourse__menu_item-open');    	
-	};
+	    	this.classList.add('сourse__menu-open');    	
+		};
 
-	for (var i = 0; i < elems.length; i++) {
-	    elems[i].addEventListener('click', makeActive);
-	}
-}
+		for (var i = 0; i < elems.length; i++) {
+		    elems[i].addEventListener('click', makeActive);
+		}
 
-function makeActive(el) {
-	el.classList.add('сourse__menu_item-open');
-}
+	
+}	
 // =================================================================================
 
 
