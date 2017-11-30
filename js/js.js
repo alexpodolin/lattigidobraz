@@ -33,14 +33,13 @@ for (var a = document.querySelectorAll('.course__menu'), el, i = 0; i < a.length
 		        elems[i].classList.remove('сourse__menu-open');
 		    }	    	
 
-	    	this.classList.add('сourse__menu-open');    	
+	    	this.classList.add('сourse__menu-open');   
+	    	
 		};
 
 		for (var i = 0; i < elems.length; i++) {
 		    elems[i].addEventListener('click', makeActive);
 		}
-
-	
 }	
 // =================================================================================
 
